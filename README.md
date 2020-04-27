@@ -1,20 +1,8 @@
-# Set up
-
-We'll need a few things to install for this section:
-
-- https://sites.google.com/a/chromium.org/chromedriver/downloads
-- behave (http://pythonhosted.org/behave/)
-- selenium (http://selenium-python.readthedocs.io/installation.html)
-
-
 ## Running the tests
 
-To run the tests, you'll need to do this in a terminal (but remember to have the Flask app running!):
+1. virtualvenv venv python=python3.8    # creating virtual environment for a project
+2. source venv/bin/activate             # activating virtual environment
+3. python -m pip install -r requirement.txt   # installing dependencies
+4. python app.py (open another terminal to run app.py in parallel)    # run app to test it
+5. Run tests by "python -m behave /tests/acceptance"    
 
-```bash
-source venv/bin/activate
-cd section6/video_code/
-python -m behave tests/acceptance
-```
-
-If you want to run the tests in PyCharm, you'll need to create appropriate configurations. We cover this in the course!
